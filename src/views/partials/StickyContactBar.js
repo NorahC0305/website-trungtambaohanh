@@ -26,7 +26,7 @@ const StickyContactBar = () => {
   };
 
   const handleEmailClick = () => {
-    window.open("/")
+    window.open("/đá")
   };
 
   return (
