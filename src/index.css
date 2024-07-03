@@ -537,6 +537,7 @@ body {
   .navbar a,
   .navbar .home {
     font-size: 14px;
+    display: none;
   }
 
   .slide-show {
