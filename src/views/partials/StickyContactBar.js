@@ -1,32 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { makeStyles } from "@mui/styles";
-import EmailIcon from "@mui/icons-material/Email";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import CloseIcon from "@mui/icons-material/Close";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookMessenger,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const StickyContactBar = () => {
   const [isVisible, setIsVisible] = useState(true);
-  
-
-  const handleToggle = () => {
-    setIsVisible(!isVisible);
-  };
 
   const handleTelegramClick = () => {
-   window.open("https://zalo.me/0903757560")
+    window.open("https://zalo.me/0903757560");
   };
 
   const handleMessengerClick = () => {
-    window.open("https://www.facebook.com/profile.php?id=100080799063525")
+    window.open("https://www.facebook.com/profile.php?id=100080799063525");
   };
 
   const handleEmailClick = () => {
-    window.open("/")
+    window.open("/");
   };
 
   return (
@@ -41,7 +33,7 @@ const StickyContactBar = () => {
         className={`button animated ${isVisible ? "visible" : "hidden"}`}
         onClick={handleEmailClick}
       >
-        <EmailIcon className="icon" />
+        <FontAwesomeIcon className="icon" icon={faEnvelope} />
       </div>
       <div
         className={`button animated ${isVisible ? "visible" : "hidden"}`}
