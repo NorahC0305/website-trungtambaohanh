@@ -18,15 +18,15 @@ const StickyContactBar = () => {
   };
 
   const handleTelegramClick = () => {
-    // ... (Your existing telegram click handler)
+   window.open("https://zalo.me/0903757560")
   };
 
   const handleMessengerClick = () => {
-    // ... (Your existing messenger click handler)
+    window.open("https://www.facebook.com/profile.php?id=100080799063525")
   };
 
   const handleEmailClick = () => {
-    // ... (Your existing email click handler)
+    window.open("/")
   };
 
   return (
