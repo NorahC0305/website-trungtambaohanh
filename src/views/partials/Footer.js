@@ -31,8 +31,7 @@ const Footer = () => {
         <div className="footer-section maps">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2340.3550550446953!2d106.68445097903897!3d10.768515882949805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fb346ab71f5%3A0x575e7eca92777912!2zVHJ1bmcgVMOibSBC4bqjbyBIw6BuaCBaT0pJUlVTSEk!5e1!3m2!1svi!2s!4v1719940935954!5m2!1svi!2s"
-            width="1250"
-            height="450"
+            
             allowfullscreen="true"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
