@@ -177,7 +177,7 @@ body {
   font-size: 30px;
   color: var(--text-color);
   font-weight: 600;
-  cursor: default;
+  cursor: pointer;
 }
 
 .logo span {
@@ -247,12 +247,14 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 0 20px 60px;
+  width: 105%;
 }
 
 .footer-section {
   flex: 1;
   padding: 0 20px;
   font-size: 1.6rem;
+
 }
 
 .footer-logo {
@@ -286,9 +288,10 @@ body {
 }
 
 .footer-section iframe {
-  width: 1350px; 
-  height: 450px; 
-  /* max-width: 100%;  */
+  width: 100%;
+  height: 450px;
+  max-width: 800px;
+  /* Adjust this value as needed */
 }
 
 .footer-bottom {
@@ -305,6 +308,11 @@ body {
 .social-icons a {
   font-size: 30px;
   margin-right: 10px;
+  color: #585f55
+}
+
+:hover.social-icons a:hover {
+  color: black;
 }
 
 .scroll-to-top {
@@ -325,6 +333,85 @@ body {
 .scroll-icon {
   font-size: 20px;
 }
+
+/*stikyContact*/
+.sticky-container {
+  position: fixed;
+  bottom: 340px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.button {
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #303f9f;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.hidden {
+  transform: scale(0);
+}
+
+.visible {
+  transform: scale(1);
+}
+
+.message {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.animated {
+  animation: pulse 1.5s linear 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*stikyContact*/
+
 
 /* Responsive Styles */
 @media only screen and (max-width: 1024px) {
@@ -352,13 +439,15 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1700px) {
   html {
     font-size: 55%;
   }
 
   .header {
     padding: 8px 5%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .navbar {
@@ -399,9 +488,37 @@ body {
     padding: 10px 20px;
     text-align: center;
   }
+
   .footer-section iframe {
-    height: 300px; /* Điều chỉnh chiều cao khi màn hình nhỏ hơn */
+    width: 100%;
+    /* Chiếm toàn bộ chiều rộng của phần tử chứa */
+    height: 300px;
+    /* Điều chỉnh chiều cao tùy theo nhu cầu */
+    max-width: 1500px;
+    /* Điều chỉnh chiều cao khi màn hình nhỏ hơn */
   }
+}
+
+@media (max-width: 600px) {
+  .sticky-container {
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .button {
+    border-radius: 0px;
+    width: calc(38% - 20px);
+    height: 50px;
+    margin: 0;
+    font-size: 10px;
+    background-color: cornflowerblue;
+    /* border: 1px solid black; */
+  }
+
+  @keyframes pulse {}
 }
 
 @media only screen and (max-width: 480px) {
@@ -443,7 +560,10 @@ body {
     padding: 10px 10px;
     text-align: center;
   }
+
   .footer-section iframe {
-    height: 200px; /* Điều chỉnh chiều cao khi màn hình nhỏ hơn */
+    width: 350px;
+    height: 200px;
+    /* Điều chỉnh chiều cao khi màn hình nhỏ hơn */
   }
 }

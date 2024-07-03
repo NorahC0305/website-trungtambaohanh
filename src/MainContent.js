@@ -4,6 +4,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./views/partials/Home";
 import Header from "./views/partials/Header";
 import Footer from "./views/partials/Footer";
+import StickyContactBar from "./views/partials/StickyContactBar";
 function MainContent() {
   const location = useLocation();
   const [currentPath, setCurrentPath] = useState("");
@@ -27,6 +28,7 @@ function MainContent() {
             <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </div>
+        <StickyContactBar currentPath={currentPath} />
         <Footer currentPath={currentPath} />
       </>
     </div>
