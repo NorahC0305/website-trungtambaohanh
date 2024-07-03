@@ -118,13 +118,106 @@ function Home() {
           </div>
         </section>
         <section className="about-section" id="about">
-          about
+          <div className="about-container">
+            <div className="about-container about-us-info">
+              <h3>Về Chúng Tôi</h3>
+              <p>
+                Với hơn 10 năm kinh nghiệm trong ngành, chúng tôi tự hào là đơn
+                vị hàng đầu trong việc cung cấp dịch vụ sửa chữa và bảo hành các
+                loại thiết bị điện tử, điện gia dụng. Chúng tôi hiểu rằng các
+                thiết bị điện tử và gia dụng đóng vai trò quan trọng trong cuộc
+                sống hàng ngày của bạn, do đó chúng tôi cam kết mang lại cho bạn
+                dịch vụ chất lượng cao, đáng tin cậy và nhanh chóng.
+              </p>
+            </div>
+            <div className="about-container our-services-info">
+              <h3>Dịch Vụ Của Chúng Tôi Bao Gồm:</h3>
+              <ul>
+                <li>
+                  <strong>Sửa Chữa Điện Tử:</strong>
+                  <ul>
+                    <li>
+                      Các thiết bị điện tử cá nhân như điện thoại, máy tính
+                      bảng, laptop, máy ảnh,...
+                    </li>
+                    <li>
+                      Các thiết bị điện tử gia đình như tivi, đầu đĩa, hệ thống
+                      âm thanh,...
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Sửa Chữa Điện Gia Dụng:</strong>
+                  <ul>
+                    <li>
+                      Các thiết bị nhà bếp như lò vi sóng, máy xay sinh tố, nồi
+                      cơm điện,...
+                    </li>
+                    <li>
+                      Các thiết bị làm lạnh như tủ lạnh, máy lạnh, máy giặt,...
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Bảo Hành:</strong>
+                  <ul>
+                    <li>
+                      Bảo hành các sản phẩm điện tử và điện gia dụng theo tiêu
+                      chuẩn nhà sản xuất.
+                    </li>
+                    <li>
+                      Dịch vụ bảo hành mở rộng với các gói bảo hành linh hoạt và
+                      phù hợp với nhu cầu của khách hàng.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div className="about-container reason-info">
+              <h3>Tại Sao Chọn Chúng Tôi?</h3>
+              <ul>
+                <li>
+                  <strong>Kinh Nghiệm và Chuyên Môn:</strong> Với đội ngũ kỹ
+                  thuật viên có tay nghề cao và giàu kinh nghiệm, chúng tôi tự
+                  tin xử lý mọi vấn đề của thiết bị một cách chuyên nghiệp và
+                  hiệu quả.
+                </li>
+                <li>
+                  <strong>Chất Lượng Dịch Vụ:</strong> Chúng tôi luôn đặt chất
+                  lượng dịch vụ lên hàng đầu, cam kết mang lại sự hài lòng tuyệt
+                  đối cho khách hàng.
+                </li>
+                <li>
+                  <strong>Nhanh Chóng và Tiện Lợi:</strong> Dịch vụ của chúng
+                  tôi không chỉ nhanh chóng mà còn tiện lợi với nhiều lựa chọn
+                  như sửa chữa tại nhà hoặc tại trung tâm.
+                </li>
+                <li>
+                  <strong>Giá Cả Cạnh Tranh:</strong> Chúng tôi cung cấp dịch vụ
+                  với mức giá hợp lý, cạnh tranh, phù hợp với túi tiền của mọi
+                  khách hàng.
+                </li>
+              </ul>
+            </div>
+            <p>
+              Hãy để chúng tôi đồng hành cùng bạn trong việc bảo vệ và duy trì
+              hoạt động tốt nhất cho các thiết bị điện tử và điện gia dụng của
+              bạn. Liên hệ với chúng tôi ngay hôm nay để nhận được sự tư vấn và
+              hỗ trợ tốt nhất!
+            </p>
+          </div>
         </section>
         <section className="services-section" id="services">
-          services
+          <div className="services-container">
+            <h2>Dịch Vụ Của Chúng Tôi</h2>
+            <p>Thêm thông tin về dịch vụ ở đây</p>
+          </div>
         </section>
         <section className="contact-section" id="contact">
-          conttact
+          <div className="contact-container">
+            <h2>Liên Hệ</h2>
+            <p>Thêm thông tin liên hệ ở đây</p>
+          </div>
         </section>
       </div>
     </div>

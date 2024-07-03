@@ -5,6 +5,7 @@ import Home from "./views/partials/Home";
 import Header from "./views/partials/Header";
 import Footer from "./views/partials/Footer";
 import StickyContactBar from "./views/partials/StickyContactBar";
+import EntryModal from "./views/partials/entryModal";
 function MainContent() {
   const location = useLocation();
   const [currentPath, setCurrentPath] = useState("");
@@ -16,6 +17,7 @@ function MainContent() {
   return (
     <div className="App">
       <>
+        <EntryModal />
         <Header currentPath={currentPath} />
         <div className="main-content">
           <Routes>
